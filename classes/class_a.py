@@ -53,6 +53,8 @@ class Point(Planar):
         '''we override the default __str__ method with our own for printing'''
         return f'Point at {self.x}, {self.y} with h:{self.hypot()}'
 
+# 'dunder' is double-underscore. Often used to refer to the built-in properties and methods of Python
+# __slots__, __init__, __str__ etc.
 if __name__ == '__main__':
     p = Point(False,4)
     p.x = 3 # calls the setter method as if it was a property

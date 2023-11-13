@@ -18,6 +18,9 @@ class Point3D(Point):
     def __str__(self):
         # self.super().__str__()
         return f'Point at {self.x}, {self.y}, {self.z}'
+    def __repr__(self):
+        '''__repr__ is used in immediate mode Python (rather than __str__)'''
+        return f'3-d Point at {self.x}, {self.y}, {self.z}'
 
 if __name__ == '__main__':
     p3 = Point3D(3,4,5)

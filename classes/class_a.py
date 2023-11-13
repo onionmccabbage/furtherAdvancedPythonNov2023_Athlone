@@ -48,11 +48,15 @@ class Point(Planar):
         '''we are obliged to implement hypot since it is in the abstract base class'''
         h = (self.x**2 + self.y**2)**0.5
         return h
+    def __str__(self):
+        '''we override the default __str__ method with our own for printing'''
+        return f'Point at {self.x}, {self.y} with h:{self.hypot()}'
 
 if __name__ == '__main__':
     p = Point(False,4)
     p.x = 3 # calls the setter method as if it was a property
     # p.y = None # Exception
     print( p.x ) # 0
-    print(f'The point at x:{p.x} y:{p.y} has a hypotenuse of {p.hypot()}') # 5.0
+    # print(f'The point at x:{p.x} y:{p.y} has a hypotenuse of {p.hypot()}') # 5.0
+    print(p) # this will use our __str__ method
 

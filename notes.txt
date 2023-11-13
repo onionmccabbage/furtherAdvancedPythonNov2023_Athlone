@@ -4,6 +4,8 @@ November 13-17 2023
 
 Toby Dussek
 
+Any question, comment or interjection is welcome at any time
+
 9:30  start
 11:00 coffee
 12:30 lunch
@@ -58,6 +60,7 @@ Wednesday
 - prepare for Thursday
 
 Thursday
+- Data Analysis
 - options for Jupyter Notebooks:
   - use Anaconda
   - pip install notebook

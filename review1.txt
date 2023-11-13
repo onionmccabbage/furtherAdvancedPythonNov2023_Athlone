@@ -1,0 +1,26 @@
+Beyond Advanced Python Review Exercise 1 1hr 10mins until 2:50
+========================================
+
+Individually or in groups, tackle as many of these challenges as you like, in any order
+There will be a chance to show your thinking after the exercise
+
+Constructor Pattern
+- Write a class to encapsulate 'weather' data
+  Include 'city', 'description', 'temperature' and 'wind' properties
+  ('wind' will persist wind-speed and wind-direction)
+  Decide how to validate these properties
+- Optionally write an Abstract Base class for this weather and implement slots
+- Override the __str__ and __repr__ methods to show a nice weather report
+
+Decorator Pattern
+- Write a decorator function that ensures all positional arguments are non-empty string
+  Decide what to do if validation fails (e.g. provide default, raise exception)
+- expand this for other kinds of validation (eg int, float, numeric, instance-of)
+- also validate keyword args
+- apply your decorator so simple use-cases (e.g. 'city' or 'description')
+
+Facade and Factory patterns
+- re-write the creature factory as a facade to all the creatures
+- consider if the 'Manager' facade could be sensibly implemented as a factory
+
+Or just play with design patterns to implement your own ideas

@@ -30,7 +30,7 @@ Monday
 - command pattern
 > after lunch review exercise
 > immediate Python
-- proxy pattern
+> proxy pattern
 - observables and subscribers (this is very fashionable just now)
 - we will need Jupyter Notebooks later in the week
 

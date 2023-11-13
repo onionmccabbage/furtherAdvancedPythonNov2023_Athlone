@@ -20,16 +20,31 @@ p_d = {'x':3, 'y':4}
 class Point:
     '''A point in 2-d space'''
     def __init__(self, x, y):
+        self.x = x # this will call the setter method for x
+        self.y = y # the setter method for y
+    @property # this decorator makes the function appear to be a property
+    def x(self):
+        return self.__x
+    @x.setter
+    def x(self, x):
+        '''set the value of self.x'''
         if type(x) in (int, float):
-            self.x = x
+            self.__x = x
         else:
-            self.x = 0 # set a sensible default
+            self.__x = 0 # set a sensible default
+    @property
+    def y(self):
+        return self.__y # return the name-mangled value
+    @y.setter
+    def y(self, y):
+        '''set the value of self.y'''
         if type(y) in (int, float):
-            self.y = y
+            self.__y = y # here we 'mangle' the name of the property
         else:
             raise TypeError('value of y must be numeric') # we can raise an exception
 
 if __name__ == '__main__':
     p = Point(False,4)
+    p.x = True
     print( p.x ) # 0
 

@@ -45,6 +45,7 @@ class Point:
 
 if __name__ == '__main__':
     p = Point(False,4)
-    p.x = True
+    p.x = True # calls the setter method as if it was a property
+    # p.y = None # Exception
     print( p.x ) # 0
 

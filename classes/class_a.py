@@ -1,3 +1,5 @@
+from class_abc import Planar
+
 # In Python everything is an Object
 # modern OOP tends to use classes
 # Only use a class when nothing else will do
@@ -17,7 +19,7 @@ p_d = {'x':3, 'y':4}
 # If we need to validate members of our structure, we might use a class
 
 # we can choose to implicitly or explicitly inherit from object
-class Point:
+class Point(Planar):
     '''A point in 2-d space'''
     def __init__(self, x, y):
         self.x = x # this will call the setter method for x
@@ -42,10 +44,15 @@ class Point:
             self.__y = y # here we 'mangle' the name of the property
         else:
             raise TypeError('value of y must be numeric') # we can raise an exception
+    def hypot(self):
+        '''we are obliged to implement hypot since it is in the abstract base class'''
+        h = (self.x**2 + self.y**2)**0.5
+        return h
 
 if __name__ == '__main__':
     p = Point(False,4)
-    p.x = True # calls the setter method as if it was a property
+    p.x = 3 # calls the setter method as if it was a property
     # p.y = None # Exception
     print( p.x ) # 0
+    print(f'The point at x:{p.x} y:{p.y} has a hypotenuse of {p.hypot()}') # 5.0
 

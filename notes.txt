@@ -20,7 +20,8 @@ Monday
 - design patterns (and anti-patterns)
 > constructor pattern
 > Abstract Base Class
-  using slots
+q -  using slots (doesnt seem to work in ABC)
+  overriding built-ins
 - conventions
   - as will all languages, identifiers can use letters, numbers and underscore (don't start with a number)
   - by convention, ClassesUsePascalCase, methodsUsePascalCase, identifiers_use_snake_case

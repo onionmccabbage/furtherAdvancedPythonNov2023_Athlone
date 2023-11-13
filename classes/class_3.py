@@ -2,6 +2,7 @@ from class_a import Point
 
 class Point3D(Point):
     ''' A point in 3-d space x, y, z'''
+    __slots__ = ('__x', '__y', '__z')
     def __init__(self, x, y, z):
         super().__init__(x, y) # call the __init__ of the parent
         self.z = z

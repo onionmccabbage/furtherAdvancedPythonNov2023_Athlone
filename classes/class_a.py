@@ -21,6 +21,7 @@ p_d = {'x':3, 'y':4}
 # we can choose to implicitly or explicitly inherit from object
 class Point(Planar):
     '''A point in 2-d space'''
+    __slots__ = ('__x','__y') # we can restrict the permitted mangled properties of this class
     def __init__(self, x, y):
         self.x = x # this will call the setter method for x
         self.y = y # the setter method for y
@@ -59,4 +60,7 @@ if __name__ == '__main__':
     print( p.x ) # 0
     # print(f'The point at x:{p.x} y:{p.y} has a hypotenuse of {p.hypot()}') # 5.0
     print(p) # this will use our __str__ method
+    # problem - all classes ultimately inherit from object, and objects permit ANY arbitrary property
+    # p.oops = 'we can add any arbitrary property to any class'
+    # print(p.oops)
 

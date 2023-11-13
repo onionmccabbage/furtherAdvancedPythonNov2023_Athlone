@@ -11,7 +11,7 @@ def showArgs(f): # this funtion will take another function as it's argument
         msg += f'The keyword arguments are {kwargs}\n' # the keyword args always in a dict
         print(msg)
         # we need to return a call to the original function
-        return f(*args, **kwargs)
+        return f(*args, **kwargs) # NB we could run this first and return the value later
     return newFunc #we do not invoke it here
 
 @showArgs

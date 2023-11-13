@@ -1,6 +1,5 @@
 Beyond Advanced Python Review Exercise 1 1hr 10mins until 2:50
 ========================================
-
 Individually or in groups, tackle as many of these challenges as you like, in any order
 There will be a chance to show your thinking after the exercise
 

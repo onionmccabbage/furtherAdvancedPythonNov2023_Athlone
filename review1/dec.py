@@ -9,6 +9,10 @@ def validString(f):
         return f(*args, **kwargs) # call the original function
     return newFunc # we do not call this function, just return it
 
+def ooblywoobly(f):
+    return f
+
+@ooblywoobly # yes we can use more than one decorator - BUT be careful
 @validString
 def toUpper(s):
     return s.upper()
@@ -16,5 +20,5 @@ def toUpper(s):
 if __name__ == '__main__':
     t = 'hello'
     T = toUpper(t) # all fine
-    q = ''
+    q = 33.33
     Q = toUpper(q) # oh dear

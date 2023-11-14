@@ -46,7 +46,7 @@ Tuesday
 - summary of design patterns
 - the GIL
   see https://realpython.com/python-gil/
-- thread functions and thread classes
+> thread functions and thread classes
 - thread locks/rlocks/semaphores
 - semaphore quantity
 - after lunch review exercise

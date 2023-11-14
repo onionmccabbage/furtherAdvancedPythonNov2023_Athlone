@@ -1,6 +1,6 @@
 class NewPublisher():
     def __init__(self):
-        '''publish a stream of events e.g. news stories, commentary, logs,keystrokes, data packets'''
+        '''publish a stream of events e.g. news stories, commentary, logs, keystrokes, data packets'''
         self.__subscribers = [] # begin with an empty list for our subscribers
         self.latest_news = None
     # Observables expose 'attach' and 'detach' methods for the subscribers
@@ -13,3 +13,7 @@ class NewPublisher():
     def notify_sub(self):
         for sub in self.__subscribers:
             sub.update() # call the update method of hte subscriber
+    def add_news(self, news):
+        self.latest_news = news
+    def get_news(self):
+        return f'News just in: {self.latest_news}'

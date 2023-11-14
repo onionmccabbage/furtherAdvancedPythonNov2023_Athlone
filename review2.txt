@@ -1,4 +1,4 @@
-Python Review Exercise 2 1.5hrs until 3:00 then break for tea until 3:15 continue 
+Python Review Exercise 2 continue until 4:20
 ========================
 For this project, use modules and imports to separate your code structures
 In a new Python module, declare a 'WeatherGetter' class which inherits from the Thread class.

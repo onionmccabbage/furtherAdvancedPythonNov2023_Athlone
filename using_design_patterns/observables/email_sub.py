@@ -1,5 +1,5 @@
 from sub import Sub
 
-class PrintSubscriber(Sub):
+class EmailSubscriber(Sub):
     def __init__(self, publisher):
         super().__init__(publisher)

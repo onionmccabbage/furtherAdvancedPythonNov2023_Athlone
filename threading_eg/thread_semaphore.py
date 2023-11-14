@@ -1,8 +1,6 @@
-from collections.abc import Callable, Iterable, Mapping
 import random
 import time
 import threading
-from typing import Any
 
 # a global asset
 ticketsAvailable = 100
@@ -25,15 +23,15 @@ class TicketSeller(threading.Thread):
                 self.ticketsSold += 1
                 ticketsAvailable -= 1
             self.__sem.release()
-        print(f'Ticket seller {self.getNAme()} sold {self.ticketsSold}')
+        print(f'Ticket seller {self.getName()} sold {self.ticketsSold}')
     def randomDelay(self):
         time.sleep(random.randint(0,4)/16) # 0, 0.25, 0.5 ...
 
 def main():
     '''use a semaphore to permit concurrent access to ticket sales'''
-    sem = threading.Semaphore(4) # choose how many concurrent ticket sellers 
+    sem = threading.Semaphore(8) # choose how many concurrent ticket sellers 
     sellers_l = []
-    for _ in range(0, 4):
+    for _ in range(0, 8): # no point having more tickets sellers than the semapore permits
         seller = TicketSeller(sem)
         sellers_l.append(seller)
         seller.start()

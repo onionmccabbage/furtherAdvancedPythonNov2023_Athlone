@@ -13,7 +13,8 @@ def main():
     ''' invoke the class method'''
     c1 = MyClass()
     thread_l = []
-    for _ in range(8):
+    # how many threads...
+    for _ in range(64):
         thread_l.append( Thread(target=c1, args=(_,)) )
     # we can start all the threads
     for t in thread_l:

@@ -33,10 +33,10 @@ Monday
 > proxy pattern
 
 Tuesday
-- how to access the course recordings 
+> how to access the course recordings 
   https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Beyond_A_Python/site/index.html
   recording username neueda c0nygre
-- functional design
+> functional design
 - we will need Jupyter Notebooks later in the week
 - state pattern
 - observables and subscribers (this is very fashionable just now)

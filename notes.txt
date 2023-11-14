@@ -38,7 +38,7 @@ Tuesday
   recording username neueda c0nygre
 > functional design
 - we will need Jupyter Notebooks later in the week
-- state pattern
+- state pattern (mutability)
 - observables and subscribers (this is very fashionable just now)
 - RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/

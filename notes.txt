@@ -1,4 +1,4 @@
-Further Advnaced Python
+Further Advanced Python
 =======================
 November 13-17 2023
 
@@ -27,17 +27,19 @@ Monday
   - by convention, ClassesUsePascalCase, methodsUsePascalCase, identifiers_use_snake_case
 > decorator pattern (using @)
 > factory and facade patterns
-- command pattern
+> command pattern
 > after lunch review exercise
 > immediate Python
 > proxy pattern
-- observables and subscribers (this is very fashionable just now)
-- we will need Jupyter Notebooks later in the week
 
 Tuesday
-- how to access the course recordings
+- how to access the course recordings 
+  https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Beyond_A_Python/site/index.html
+  recording username neueda c0nygre
 - functional design
+- we will need Jupyter Notebooks later in the week
 - state pattern
+- observables and subscribers (this is very fashionable just now)
 - RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/
 - concurrency and parallel code

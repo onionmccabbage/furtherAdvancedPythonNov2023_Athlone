@@ -52,7 +52,7 @@ Tuesday
 > after lunch review exercise
 
 Wednesday
-- custom thread decorator to make classes and methods thread safe
+> custom thread decorator to make classes and methods thread safe
 > daemon thread, thread events
 - multiprocessing
 - performance and timing (timeit)

@@ -25,7 +25,7 @@ async def countB():
 
 async def main():
     '''call our async function (which is a co-routine)'''
-    await asyncio.gather( count(), countB() )
+    await asyncio.gather( count(), countB(), count() )
 
 if __name__ == '__main__':
     '''we can call run on an async function'''

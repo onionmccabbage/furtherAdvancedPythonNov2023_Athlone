@@ -12,10 +12,7 @@ async def makeRandom(idx,thresold):
     return i
 
 async def main():
-    results = await asyncio.gather(  *(makeRandom(i, 10-i-1) for i in range(3)))
-    return results
-
-if __name__ == '__main__':
+    results = await asyncio.gather(  *(makeRandom(i, 10-i-1) for i in range(7)) )
     random.seed(444)
     r1, r2, r3 = asyncio.run(main())
     print(f'r1:{r1} r2:{r2} r3:{r3}')

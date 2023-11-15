@@ -60,7 +60,7 @@ Wednesday
 - after lunch review exercise
 - why use a thread or a process
 > generators
-- async/await and asyncio
+> async/await and asyncio
 - prepare for Thursday
 
 Thursday

@@ -8,7 +8,8 @@ class MyProc(Process):
         super(MyProc, self).__init__()
     def run(self):
         '''override the built in run method'''
-        print(f'Child process ID is {os.getpid()} aka {multiprocessing.current_process()}')
+        print(f'''Child process ID is {os.getpid()} aka {multiprocessing.current_process().pid} 
+              parent is {multiprocessing.parent_process().pid}''')
 
 def main():
     '''start a few processes'''

@@ -53,9 +53,9 @@ Tuesday
 
 Wednesday
 - custom thread decorator to make classes and methods thread safe
-- daemon thread, thread events
+> daemon thread, thread events
 - multiprocessing
-- performance and timing
+- performance and timing (timeit)
 - profiling with @profile and cProfile
 - after lunch review exercise
 - why use a thread or a process

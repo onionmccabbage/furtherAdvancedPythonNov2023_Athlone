@@ -1,4 +1,4 @@
-Review 3 - Profiling and Timing 1hr20mins continue until breeak at 3:00 then carry on after 3:15 to 4:15
+Review 3 - Profiling and Timing 1hr20mins carry on to 4:00
 ===============================
 For this exercise, use any of the previous review exercises, 
 or my solutions to those exercises, or write new code if you prefer 

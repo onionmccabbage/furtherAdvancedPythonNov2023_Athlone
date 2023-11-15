@@ -54,11 +54,11 @@ Tuesday
 Wednesday
 > custom thread decorator to make classes and methods thread safe
 > daemon thread, thread events
-- multiprocessing
+> multiprocessing
 - performance and timing (timeit)
 - profiling with @profile and cProfile
 - after lunch review exercise
-- why use a thread or a process
+> why use a thread or a process
 > generators
 > async/await and asyncio
 - prepare for Thursday

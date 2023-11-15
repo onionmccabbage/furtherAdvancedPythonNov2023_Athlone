@@ -2,6 +2,7 @@ from collections.abc import Callable, Iterable, Mapping
 from threading import Thread
 import random
 import time
+import timeit
 from typing import Any
 
 class MyThread(Thread):
@@ -30,7 +31,11 @@ def main():
         t.join()
 
 if __name__ == '__main__':
-    start = time.time()
+    # start = time.time()
+    # timeit is more accurate than time.time
+    # timeit makes a good effort to ignore non-python time
+    start = timeit.default_timer()
     main()
-    end = time.time()
+    # end = time.time()
+    end = timeit.default_timer()
     print(f'Total time {end-start}')

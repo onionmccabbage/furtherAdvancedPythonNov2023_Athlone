@@ -79,17 +79,17 @@ Thursday
   - matplotlib
 	The easiest way to get all the bits and bobs is to use Anaconda
   Data sources (csv, xlsx, text, db, url...)
-- using Jupyter notebooks
+> using Jupyter notebooks
    you can 'pip install jupyter' then start it with 'python -m notebook'
    then you will also need to pip install numpy, pandas etc.
 > numpy and data structures: the arange and array 
 > pandas: series and data-frame
   NaN, creating stuctures, analysis (stats)
 - data cleansing and preparation
-- grouping and aggregating data
+> grouping and aggregating data
 - descriptive statistics
-- handling files and remote data
-- after lunch review exercise
+> handling files and remote data
+> after lunch review exercise
 - careful: exporting a notebook does not add 'print' statements
 
 Friday

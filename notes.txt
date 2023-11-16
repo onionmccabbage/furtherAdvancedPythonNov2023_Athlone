@@ -44,7 +44,7 @@ Tuesday
        https://rxmarbles.com/
 - concurrency and parallel code
 - summary of design patterns
-- the GIL
+> the GIL (cpython has a restriction)
   see https://realpython.com/python-gil/
 > thread functions and thread classes
 > thread locks/rlocks/semaphores
@@ -82,10 +82,11 @@ Thursday
 - using Jupyter notebooks
    you can 'pip install jupyter' then start it with 'python -m notebook'
    then you will also need to pip install numpy, pandas etc.
-- numpy and data structures: the arange and array 
-- pandas: series and data-frame
+> numpy and data structures: the arange and array 
+> pandas: series and data-frame
   NaN, creating stuctures, analysis (stats)
 - data cleansing and preparation
+- grouping and aggregating data
 - descriptive statistics
 - handling files and remote data
 - after lunch review exercise

@@ -1,4 +1,4 @@
-Review 4 (Data analysis) 
+Review 4 (Data analysis) carry on to 3:30
 ========================
 - read in external data (data/flights.csv) into a data frame
 - show the description df.description()

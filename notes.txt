@@ -57,13 +57,14 @@ Wednesday
 > multiprocessing
 > performance and timing (timeit)
 > profiling with @profile and cProfile
-- after lunch review exercise
+> after lunch review exercise
 > why use a thread or a process
 > generators
 > async/await and asyncio
-- prepare for Thursday
+> prepare for Thursday
 
 Thursday
+- cpython (c), jython (java), ironpython (.net), ipython (c)
 - Data Analysis
 - options for Jupyter Notebooks:
   - use Anaconda
@@ -73,7 +74,7 @@ Thursday
 - Python for Data Analysis
   we will need:
   - jupyter notebooks
-  - numpy
+  - numpy 
   - pandas
   - matplotlib
 	The easiest way to get all the bits and bobs is to use Anaconda

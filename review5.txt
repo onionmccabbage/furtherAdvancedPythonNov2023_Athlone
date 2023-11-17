@@ -1,13 +1,14 @@
-Review Exercise: Microservices
+Review Exercise: Microservices 1 1/2 hrs
 ==============================
 Write a microservice that uses 'socket' (write a new one or extend the existing one)
 Respond to requests as follows:
-If the client request is 'people', 'planets' or 'species' then
+If the client request is 'people', 'planets', 'species', 'starships' or 'vehicles' then
 make a call (using the requests library) to https://swapi.dev/api/<category>/1 
 (where category is one of the above)
 When the data comes back, find just the 'name' value and return that to the client
 Handle 'not found 404' responses
 (NB you will need to include an id for the swapi/api request as shown above)
+CAREFUL - some cateogies only work for certain id values
 
 If the client request can be cast as an integer, make a request to
   https://swapi.dev/api/people/<int>
@@ -34,11 +35,11 @@ If time
 =======
 Whenever a swapi request is made, populate a class instance
 You could have a 'Swapi' class (includes 'name')
-then 'People', 'Planets' and 'Species' classes inherit from 'Swapi adding properties
+then 'People', 'Planets' and 'Species' classes inherit from 'Swapi' adding properties
 Validate with get/set methods
 
 Then for every sucessful request make further requests for the films
-You could make these requests on threwads, so they are concurrent
+You could make these requests on threads, so they are concurrent
 Show the film names in the response
 
 try using memory profiler https://pypi.org/project/memory-profiler/

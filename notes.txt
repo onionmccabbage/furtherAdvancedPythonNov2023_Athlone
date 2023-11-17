@@ -16,7 +16,7 @@ repo https://github.com/onionmccabbage/furtherAdvancedPythonNov2023_Athlone
 
 Monday
 > welcome
-- we will be installing additional packages as needed
+> we will be installing additional packages as needed
 > design patterns (and anti-patterns)
 > constructor pattern
 > Abstract Base Class
@@ -37,7 +37,6 @@ Tuesday
   https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Beyond_A_Python/site/index.html
   recording username neueda c0nygre
 > functional design
-- we will need Jupyter Notebooks later in the week
 > state pattern (mutability)
 > observables and subscribers (this is very fashionable just now)
 - RxPY https://rxpy.readthedocs.io/en/latest/index.html
@@ -64,14 +63,14 @@ Wednesday
 > prepare for Thursday
 
 Thursday
-- cpython (c), jython (java), ironpython (.net), ipython (c)
+> cpython (c), jython (java), ironpython (.net), ipython (c)
 - Data Analysis
 - options for Jupyter Notebooks:
   - use Anaconda
   - pip install notebook
   - just use existing VSCode (or similar)
   - use cloud
-- Python for Data Analysis
+> Python for Data Analysis
   we will need:
   - jupyter notebooks
   - numpy 
@@ -85,15 +84,17 @@ Thursday
 > numpy and data structures: the arange and array 
 > pandas: series and data-frame
   NaN, creating stuctures, analysis (stats)
-- data cleansing and preparation
+> data cleansing and preparation
 > grouping and aggregating data
-- descriptive statistics
+> descriptive statistics
 > handling files and remote data
 > after lunch review exercise
-- careful: exporting a notebook does not add 'print' statements
+> careful: exporting a notebook does not add 'print' statements
 
 Friday
-- data vizualisation with matplotlib
+- NB it is possible to run Jupyter online...
+- simple examples using observables from RxPY
+> data vizualisation with matplotlib
 - statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
 - review of microservices (inc. multi threading)
@@ -103,7 +104,8 @@ Friday
   see https://flask.palletsprojects.com/en/2.3.x/
 - after lunch review exercise
 - end of course feedback
-
+  internal
+  external
 
 Some Websites
    https://www.geeksforgeeks.org/python-design-patterns/

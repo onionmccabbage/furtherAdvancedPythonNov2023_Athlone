@@ -44,7 +44,11 @@ def menu():
 
 # we usually try to avoid writing too much HTML within Python
 # Flask offers a template engine with a microsyntax
-
+@app.route('/lunch')
+@app.route('/lunch/<dessert>')
+def lunch(dessert=None):
+    # by default Flask will look in the 'templates' folder
+    return render_template('lunch.html', dessert=dessert)
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', debug=True) # debug will reload on change (use for development)

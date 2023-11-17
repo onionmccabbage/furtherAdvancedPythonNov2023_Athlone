@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Web Server Demo</title>
+</head>
+<body>
+    <article>
+        <section>
+            <!-- always use semantic tags in modern html -->
+            <h2>Lunch Menu</h2>
+            <ul>
+                <li>Salad</li>
+                <li>Fish</li>
+                <li>Aubergine</li>
+            </ul>
+            <aside>
+                <!-- Flask has a micro syntax for use within HTML templates -->
+                {% if dessert != None %}
+                    <p>For dessert we have {{dessert}}</p>
+                {% endif %}
+            </aside>
+        </section>
+    </article>
+</body>
+</html>

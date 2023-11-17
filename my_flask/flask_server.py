@@ -23,7 +23,7 @@ def about():
 # we can pass parameters in the URL (Represent the State REST)
 @app.route('/greet')
 @app.route('/greet/<fname>') # the <> indicate a URL positional argument
-@app.route('/greet/<fname><sname>') # two positional REST parameters
+@app.route('/greet/<fname>/<sname>') # two positional REST parameters
 def greet(fname=None, sname=None):
     if fname:
         if sname:

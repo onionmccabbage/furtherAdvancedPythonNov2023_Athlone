@@ -49,6 +49,9 @@ def menu():
 def lunch(dessert=None):
     # by default Flask will look in the 'templates' folder
     return render_template('lunch.html', dessert=dessert)
+# flask can handle get. post, put etc.
+# by default is expects get
+# remember post does NOT represent the state on the URL (post is unlimited)
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', debug=True) # debug will reload on change (use for development)

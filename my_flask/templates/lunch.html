@@ -19,6 +19,8 @@
                 <!-- Flask has a micro syntax for use within HTML templates -->
                 {% if dessert != None %}
                     <p>For dessert we have {{dessert}}</p>
+                {% else %}
+                    <p>There is no dessert today</p>
                 {% endif %}
             </aside>
         </section>

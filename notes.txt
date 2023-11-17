@@ -92,10 +92,10 @@ Thursday
 > careful: exporting a notebook does not add 'print' statements
 
 Friday
-- NB it is possible to run Jupyter online...
-- simple examples using observables from RxPY
+> NB it is possible to run Jupyter online...
+> simple examples using observables from RxPY
 > data vizualisation with matplotlib
-- statistical analysis and correlation
+> statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
 - review of microservices (inc. multi threading)
 - Flask: running as dev or prod server (performance and security)

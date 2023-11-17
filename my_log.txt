@@ -1,0 +1,12 @@
+this is sent to the log file
+this is sent to the log file
+this is sent to the log file
+this is sent to the log file
+this is sent to the log file
+this is sent to the log file
+this is sent to the log file
+redirected output
+redirected output
+redirected output
+redirected output
+redirected output

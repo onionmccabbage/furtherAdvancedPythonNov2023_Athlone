@@ -13,6 +13,7 @@ Any question, comment or interjection is welcome at any time
 4:30  end
 
 repo https://github.com/onionmccabbage/furtherAdvancedPythonNov2023_Athlone
+course website https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Beyond_A_Python/site/index.html
 
 Monday
 > welcome
@@ -104,7 +105,7 @@ Friday
   or else debug=True in the app declaration
   see https://flask.palletsprojects.com/en/2.3.x/
 > after lunch review exercise
-- resolve RX issue
+> resolve RX issue
 - end of course feedback
   internal https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1502707&OID=511842&Title=Python%20-%20Beyond%20Advanced&Owner=Nitin%20Tiwari
   external https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/f21aed09-b7db-4655-8a78-c4700081e85f

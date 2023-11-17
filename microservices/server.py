@@ -19,7 +19,7 @@ def myServer(): # here we use functional programing - could use a class
         bytebuffer = client.recv(1024) # the first 1024 bytes of the request object
         print(f'Server received {bytebuffer}')
         if bytebuffer in (b'quit', b'QUIT', b'q', b'Q'):
-            client.send('you killed the server')
+            client.send(b'you killed the server') # or .encode()
             break  # stop the run loop
         else:
             response_str = bytebuffer.decode().upper()

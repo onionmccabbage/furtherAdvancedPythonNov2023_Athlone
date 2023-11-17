@@ -3,6 +3,7 @@
 # Each service can interact with other services
 # we often think of a microservice as application programming interface (API)
 import socket # often called socket programming
+import requests
 
 def myServer(): # here we use functional programing - could use a class
     '''This simple server will receive client requests
@@ -21,6 +22,14 @@ def myServer(): # here we use functional programing - could use a class
         if bytebuffer in (b'quit', b'QUIT', b'q', b'Q'):
             client.send(b'you killed the server') # or .encode()
             break  # stop the run loop
+        # optionally get the weather (this service acts as a proxy for another service)
+        if bytebuffer in (b'Weather', b'weather'):
+            try:
+                report = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q=athlone&units=metric&APPID=957d663a2296945e39a56609740a2548')
+                msg = report.json() # Python will convert the JSON into a structure
+                client.send( msg.encode() )
+            except Exception as e:
+                    print(e)
         else:
             response_str = bytebuffer.decode().upper()
             client.send( response_str.encode() )

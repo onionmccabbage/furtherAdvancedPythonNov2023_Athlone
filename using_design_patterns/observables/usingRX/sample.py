@@ -1,10 +1,8 @@
-from reactivex import Observable
+from reactivex import Observable, of
  
 # Create an observable sequence
-observable = Observable.from_iterable(range(5))
+observable = of(*range(5)) # * will unpack the values
  
-# Use operators to transform the sequence
-transformed = observable.map(lambda x: x * 2).filter(lambda x: x > 5)
- 
+
 # Subscribe to the transformed sequence
-transformed.subscribe(lambda x: print(f"Transformed Value: {x}"))
+observable.subscribe(lambda x: print(f"observed Value: {x}"))

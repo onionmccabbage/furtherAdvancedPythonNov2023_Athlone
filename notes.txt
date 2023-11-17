@@ -97,7 +97,8 @@ Friday
 > data vizualisation with matplotlib
 > statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
-- review of microservices (inc. multi threading)
+> review of microservices (inc. multi threading)
+> switching context
 - Flask: running as dev or prod server (performance and security)
   to run as a debug server: flask --app my_flask.py --debug run
   or else debug=True in the app declaration

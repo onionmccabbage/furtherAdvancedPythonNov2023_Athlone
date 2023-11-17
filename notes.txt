@@ -8,7 +8,7 @@ Any question, comment or interjection is welcome at any time
 
 9:30  start
 11:00 coffee
-12:30 lunch until 1:30
+12:25 lunch until 1:25
 3:00  tea break
 4:30  end
 
@@ -99,7 +99,7 @@ Friday
   REMEMBER: correlation does NOT prove CAUSATION
 > review of microservices (inc. multi threading)
 > switching context
-- Flask: running as dev or prod server (performance and security)
+> Flask: running as dev or prod server (performance and security)
   to run as a debug server: flask --app my_flask.py --debug run
   or else debug=True in the app declaration
   see https://flask.palletsprojects.com/en/2.3.x/
@@ -107,7 +107,7 @@ Friday
 - resolve RX issue
 - end of course feedback
   internal
-  external
+  external  
 
 Some Websites
    https://www.geeksforgeeks.org/python-design-patterns/

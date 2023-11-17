@@ -103,6 +103,7 @@ Friday
   or else debug=True in the app declaration
   see https://flask.palletsprojects.com/en/2.3.x/
 - after lunch review exercise
+- resolve RX issue
 - end of course feedback
   internal
   external

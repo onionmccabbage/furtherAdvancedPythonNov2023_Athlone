@@ -16,5 +16,13 @@ class Redirect:
         very fussy - we MUST provide exc_type, exc_value, exc_traceback'''
         sys.stdout = self.orig_stdout # put it back how it was
 
+def main():
+    ''' use 'with' to manage a file access object '''
+    with open('my_log.txt', 'at') as fobj: # this is a file access object
+        r = Redirect(fobj)
+        with r:
+            print('this is sent to the log file')
+        print('back to the original output stream (console)')
+
 if __name__ == '__main__':
-    print(sys.stdout)
+    main()

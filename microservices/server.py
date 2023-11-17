@@ -26,7 +26,8 @@ def myServer(): # here we use functional programing - could use a class
         if bytebuffer in (b'Weather', b'weather'):
             try:
                 report = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q=athlone&units=metric&APPID=957d663a2296945e39a56609740a2548')
-                msg = report.json() # Python will convert the JSON into a structure
+                weather = report.json() # Python will convert the JSON into a structure
+                msg = weather['weather'][0]['description']
                 client.send( msg.encode() )
             except Exception as e:
                     print(e)

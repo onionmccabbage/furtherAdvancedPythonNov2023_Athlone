@@ -4,6 +4,7 @@
 # but for an internal web server it is great
 
 from flask import Flask
+from flask import render_template # this is a templating engine
 
 app = Flask(__name__) # this is conventional
 # we declare routes for our app
@@ -31,8 +32,18 @@ def greet(fname=None, sname=None):
             return f'<h2>Welcome {fname}'
     else:
         return '<h2>Welcome</h2>'
+# a menu of links
+@app.route('/menu')
+def menu():
+    # here is some basic html
+    link1 = '<a href="/">Home</a>'
+    link2 = '<a href="/about">About</a>'
+    link3 = '<a href="/greet">Greet</a>'
+    link4 = '<a href="/snow">Snow</a>'
+    return f'{link1} | {link2} | {link3} | {link4}'
 
-
+# we usually try to avoid writing too much HTML within Python
+# Flask offers a template engine with a microsyntax
 
 
 if __name__ == '__main__':
